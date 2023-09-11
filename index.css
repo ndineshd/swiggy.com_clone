@@ -79,4 +79,47 @@ ul,.nav_item,a:hover {
 }
 .container {
     display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+.image_container {
+    position: relative;
+}
+.image_text {
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    font-weight: 800;
+    font-size: 22px;
+    background-color: rgba(0,0,0,0.08);
+    border-radius: 15px;
+}
+.downcontainer {
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.number {
+    margin-left: 3px;
+}
+.recipie {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #02060C99;
+    
+}
+.area {
+    font-size: 16px;
+    color: #02060C99;
+    margin-top: 5px;
+}
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 10px;
 }
