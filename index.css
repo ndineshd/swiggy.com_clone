@@ -13,7 +13,7 @@
     right: 0;
     padding: 0 20px;
     height: 80px;
-    background: white;
+    background: rgb(255, 255, 255);
     z-index: 10;
 }
 
@@ -67,8 +67,13 @@ position: relative;
 stroke: currentColor;
 }
 
-.nav_item:hover {
-    transform: scale(1.1);
+._1GTCc:hover {
+    fill: currentColor;
+}
+
+
+.nav_item .spanname {
+width: auto;
 }
 
 a:hover {
@@ -77,21 +82,16 @@ a:hover {
 
 .headli {
     margin-right: 60px;
-    color: #3d4152;
+    color: rgb(61, 65, 82);
     font-size: 16px;
     font-weight: 500;
-}
-
-.headli:hover ._1GTCc {
-    color: orange;
-    fill: white;
 }
 
 .items,.nav_item,a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #3d4152;
+    color: rgb(61, 65, 82);
     font-weight: 500; 
 }
 
@@ -103,9 +103,10 @@ a:hover {
     stroke: 2px;
     fill: none;
 }
+
 .headli:hover ._2MSid {
-    fill: white;
-    color: orange;
+    fill: rgb(255, 255, 255);
+    color: rgb(255, 165, 0);
 }
 
 .cart0 {
@@ -115,7 +116,7 @@ left: 42%;
 transform: translate(-50%, -50%);
 font-size: 14px;
 font-weight: 600;
-background-color: white;
+background-color: rgb(255, 255, 255);
 }
 
 .offerimage {
@@ -165,7 +166,7 @@ position: relative;
     letter-spacing: -0.5px;
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .downcontainer {
@@ -195,7 +196,7 @@ position: relative;
 .recipie {
     margin-top: 5px;
     font-size: 16px;
-    color: #02060C99;
+    color: rgba(2, 6, 12, 0.6);
     width: 200px;
     white-space: nowrap;
     overflow: hidden;
@@ -204,7 +205,7 @@ position: relative;
 
 .area {
     font-size: 16px;
-    color: #02060C99;
+    color: rgba(2, 6, 12, 0.6);
     margin-top: 5px;
     width: 200px;
     white-space: nowrap;
@@ -214,7 +215,7 @@ position: relative;
 
 .grid_container {
     display: inline-grid;
-    grid-template-columns: repeat(4, 3fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
     justify-content: center;
     position: inherits;
@@ -227,10 +228,11 @@ position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 footer {
-    background-color: gray;
+    background-color: rgb(2, 6, 12);;
 }
 
 .footerlast {
@@ -241,38 +243,70 @@ footer {
 .parentdiv {
     display: flex;
     flex-wrap: wrap;
-    display: block;
-    display: grid;
-    grid-template-columns: repeat(2 , 2fr);
 }
 
 .footerfinal {
     display: flex;
-    flex-wrap: wrap;
-    display: block;
+    flex-wrap: nowrap;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    color: rgb(255, 255, 255);
+    padding-left: 120px ;
 }
+
 .footerul {
     list-style-type: none;
+    line-height: 40px;
 }
+
 .logotext {
-    display: block;
+    display: inline-block;
+}
+
+.divboth {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .details {
-    display: block;
+    display: inline-block;
+    padding-top: 40px;
 }
 
 .footerlast {
     display: inline-block;
     padding: 30px;
+    padding: 40px 60px 30px 60px;
 }
 
 .footerparent {
     font-size: 18px;
     font-weight: 700;
-    color: white;
 }
 
+.footerall {
+    align-items: end;
+}
+
+.legal {
+    margin-top: 30px;
+}
+
+.swiggy {
+    font-size: 24px;
+    font-weight: 800;
+    vertical-align: top;
+}
+
+.companyname {
+    font-size: 16px;
+    width: 210px;
+    padding-top: 15px;
+    color: rgba(255, 255, 255,0.60);
+}
+
+.footerli {
+    font-size: 16px;
+    color: rgba(255, 255, 255,0.60);
+}
